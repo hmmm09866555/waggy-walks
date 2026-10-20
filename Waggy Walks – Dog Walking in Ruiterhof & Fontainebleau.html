@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Waggy Walks – Dog Walking in Ruiterhof & Fontainebleau</title>
+<style>
+:root{--bg:#07050c;--bg2:#100b1a;--card:rgba(255,255,255,.05);--bd:rgba(167,120,255,.22);--tx:#f4f1fa;--mu:#a9a3b8;--pu:#8b3dff;--pu2:#b78bff;--ok:#5fd39a;--er:#ff7a8a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root:not([data-theme="light"]){color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 500px at 80% -5%,#2a0f5c55,transparent),var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--pu2)}h1,h2,h3{line-height:1.15;margin:0 0 .5em}h1{font-size:clamp(2.2rem,9vw,4rem)}h2{font-size:clamp(1.6rem,6vw,2.4rem)}
+.w{max-width:1080px;margin:auto;padding:0 18px}section{padding:56px 0}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#07050cd9;backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#07050cd9;z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--tx);text-decoration:none}.logo{display:inline-flex;align-items:center;gap:10px;letter-spacing:.2px}.logo b{color:var(--pu2)}
+nav ul{display:none;list-style:none;gap:22px;margin:0;padding:0}nav a{color:var(--mu);text-decoration:none;font-size:.95rem}
+.btn{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font:600 1rem inherit;font-family:inherit;color:#fff;background:linear-gradient(135deg,#7a2cf0,#a45cff);box-shadow:0 6px 24px #8b3dff55;cursor:pointer;text-decoration:none;min-height:46px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px #8b3dff77}.btn.g{background:transparent;border:1px solid var(--bd);box-shadow:none;color:var(--tx)}.btn.sm{padding:8px 14px;min-height:36px;font-size:.88rem}
+#mb{background:none;border:1px solid var(--bd);color:var(--tx);border-radius:10px;width:44px;height:44px;font-size:1.3rem}
+#menu{display:none;padding:8px 18px 16px;border-top:1px solid var(--bd)}#menu.o{display:block}#menu a{display:block;padding:12px 0;color:var(--tx);text-decoration:none}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:20px;backdrop-filter:blur(8px)}
+.hero{display:grid;gap:28px;align-items:center}.hero p{color:var(--mu)}.row{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.art{aspect-ratio:1;max-width:380px;margin:auto;width:100%;border-radius:28px;background:radial-gradient(circle at 50% 40%,#5b21b6aa,#12091f);border:1px solid var(--bd);display:grid;place-items:center;box-shadow:0 0 60px #8b3dff44}
+.grid{display:grid;gap:16px}.price{font-size:2rem;font-weight:800;color:var(--pu2)}.tag{font-size:.75rem;color:var(--pu2);border:1px solid var(--bd);border-radius:99px;padding:2px 10px}
+.feat{border-color:#a45cff;box-shadow:0 0 40px #8b3dff33}ul.t{padding-left:18px;color:var(--mu)}.mu{color:var(--mu);font-size:.9rem}
+label{display:block;font-size:.9rem;margin:12px 0 4px;color:var(--mu)}
+input,select,textarea{width:100%;background:#0c0814;color:var(--tx);border:1px solid var(--bd);border-radius:12px;padding:12px;font:inherit;min-height:46px}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--pu2);outline-offset:2px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}.slot{padding:10px 0;border-radius:10px;border:1px solid var(--bd);background:transparent;color:var(--tx);font:inherit}.slot.on{background:var(--pu);border-color:var(--pu)}.slot:disabled{opacity:.3;text-decoration:line-through}
+.msg{padding:12px;border-radius:12px;margin-top:12px}.msg.ok{background:#5fd39a22;border:1px solid var(--ok)}.msg.er{background:#ff7a8a22;border:1px solid var(--er)}.msg.in{background:#8b3dff22;border:1px solid var(--bd)}
+details{border-bottom:1px solid var(--bd);padding:12px 0}summary{cursor:pointer;font-weight:600}details p{color:var(--mu);margin:8px 0 0}
+.stars{color:#ffc857;letter-spacing:2px}footer{border-top:1px solid var(--bd);padding:36px 0 90px;color:var(--mu);font-size:.92rem;background:var(--bg2)}
+.fab{position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;gap:8px}.fab .btn{flex:1;text-align:center}
+.hide{display:none!important}.adm table{width:100%;border-collapse:collapse;font-size:.85rem}.adm td,.adm th{padding:8px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}.adm{overflow-x:auto}
+@media(min-width:800px){nav ul{display:flex}#mb,#menu{display:none!important}.hero{grid-template-columns:1.2fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c2{grid-template-columns:1fr 1fr}.fab{display:none}footer{padding-bottom:36px}section{padding:84px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="w nav"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6a1fe0"/><stop offset="1" stop-color="#b78bff"/></linearGradient></defs><symbol id="lg" viewBox="0 0 48 48"><rect width="48" height="48" rx="14" fill="url(#lgg)"/><g fill="#fff"><circle cx="13.5" cy="22" r="4"/><circle cx="20.5" cy="14.5" r="4.2"/><circle cx="29" cy="14.5" r="4.2"/><circle cx="36" cy="22" r="4"/><path d="M24.5 26c-6 0-11 5-11 9 0 3 2.5 4.5 5.5 4 2-.4 3.8-1 5.5-1s3.5.6 5.5 1c3 .5 5.5-1 5.5-4 0-4-5-9-11-9z"/></g></symbol></svg><a class="logo" href="#top" aria-label="Waggy Walks home"><svg width="38" height="38" aria-hidden="true"><use href="#lg"/></svg><span>Waggy <b>Walks</b></span></a>
+<nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<button id="mb" aria-label="Menu" aria-expanded="false">☰</button></div>
+<div id="menu"><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#policy">Booking &amp; cancellation policy</a></div></header>
+
+<main id="top">
+<section class="w hero"><div><span class="tag">Local dog walking</span><h1 style="margin-top:12px">Happy Dogs. <span style="color:var(--pu2)">Happier Walks.</span></h1>
+<p>Reliable, caring dog walking that keeps tails wagging and gives your best friend the exercise and attention they deserve.</p>
+<div class="row"><a class="btn" href="#book">Book a Walk</a><a class="btn g" href="#pricing">Explore Our Services</a></div>
+<p class="mu">Every walk is about care, safety, exercise, and a happy pup.<br><strong id="areasHero" style="color:var(--tx)"></strong></p></div>
+<div><div class="art" role="img" aria-label="Waggy Walks logo" style="aspect-ratio:auto;padding:36px 20px;text-align:center"><div><svg width="150" height="150" aria-hidden="true" style="filter:drop-shadow(0 10px 30px #8b3dffaa)"><use href="#lg"/></svg><div style="font-size:2rem;font-weight:800;margin-top:14px">Waggy <b style="color:var(--pu2)">Walks</b></div><div class="mu">Professional-minded, neighbourhood dog walking</div></div></div><div class="card" style="margin-top:14px"><label for="hs" style="margin-top:0">Service</label><select id="hs"></select><label for="ha">Walking area</label><select id="ha"></select><button class="btn" id="hg" type="button" style="width:100%;margin-top:14px">See available times</button></div></div></section>
+
+<section id="about" class="w"><div class="grid c2"><div><h2>About Waggy Walks</h2>
+<p>Hi! I’m the 15-year-old behind Waggy Walks. I’m building my own small business while saving towards my goals, staying active, and doing something I genuinely enjoy.</p>
+<p>I’ve got experience with dogs and understand how important it is for them to get exercise, attention, and care. I want every owner to feel confident that their dog is being looked after responsibly.</p>
+<p>Waggy Walks is about happy dogs, reliable service, and giving local pet owners a helping hand. Every booking means a lot to me, and I aim to treat every dog with patience, care, and respect.</p></div>
+<div class="card"><h3>Why Waggy Walks?</h3><ul class="t"><li>Experience with dogs</li><li>Friendly, attentive service</li><li>Local neighbourhood walks</li><li>Clear communication with owners</li><li>A young entrepreneur working towards his goals</li></ul></div></div></section>
+
+<section id="pricing" class="w"><h2>Walking packages</h2><p class="mu">Prices in South African rand (R). No extra fees are charged unless clearly stated before you book.</p><p><strong>Service areas:</strong> Ruiterhof and Fontainebleau</p>
+<div class="grid c2" id="pk"></div><p class="mu">Two-dog walks are subject to a meet-and-greet and an assessment of whether both dogs can be safely handled together.</p></section>
+
+<section id="book" class="w"><h2>Book a walk</h2>
+<div class="card"><div id="bkNote" class="msg in">Requests stay <strong>pending</strong> until I confirm them. A time is only confirmed once this page says it has been accepted. Times are South African time.</div>
+<form id="bf" novalidate>
+<label for="svc">Service</label><select id="svc"></select>
+<label for="dt">Preferred date</label><input type="date" id="dt" required>
+<label>Start time</label><div class="slots" id="sl" role="group" aria-label="Available start times"></div><div class="mu" id="slh">Pick a date to see times. Weekdays 15:30–18:30, weekends 12:00–18:00.</div>
+<label for="nm">Full name</label><input id="nm" autocomplete="name" required>
+<label for="em">Email</label><input id="em" type="email" autocomplete="email" required>
+
+
+
+<label for="ar">Walking area</label><select id="ar"></select>
+<label for="mp">Meeting point (no need for your full address)</label><input id="mp" required>
+
+
+<label for="nt">Additional notes (anything I should know)</label><textarea id="nt" rows="2"></textarea>
+<label style="display:flex;gap:10px;align-items:flex-start;color:var(--tx)"><input type="checkbox" id="tm" style="width:22px;min-height:22px;margin-top:3px">I agree to the&nbsp;<a href="#policy">booking &amp; cancellation policy</a></label>
+<div style="margin-top:16px"><button class="btn" id="sub" type="submit">Request booking</button></div><div id="bm" role="status" aria-live="polite"></div></form></div></section>
+
+<section id="reviews" class="w"><h2>Reviews</h2><div id="avg" class="mu"></div><div class="grid c3" id="rv"></div>
+<div class="card" style="margin-top:20px"><h3>Share your experience</h3><p class="mu">All reviews are moderated before they appear.</p>
+<form id="rf" novalidate><label for="rn">Display name</label><input id="rn" required><label for="rd">Dog’s name (optional)</label><input id="rd">
+<label for="rs">Rating</label><select id="rs"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select>
+<label for="rt">Your review</label><textarea id="rt" rows="3" required maxlength="600"></textarea>
+<div style="margin-top:14px"><button class="btn" type="submit">Submit review</button></div><div id="rm" role="status" aria-live="polite"></div></form></div></section>
+
+<section id="faq" class="w"><h2>FAQ</h2><div id="fq"></div></section>
+
+<section id="policy" class="w"><h2>Booking, cancellation &amp; refund policy</h2><div class="card">
+<p><strong>Booking.</strong> All walks must be booked in advance. A booking is confirmed only when the website clearly states that it has been accepted.</p>
+<p><strong>Cancellation.</strong> Please give at least 24 hours’ notice to cancel or reschedule whenever possible. Any late-cancellation fee must be disclosed and agreed before booking; none is currently charged.</p>
+<p><strong>Weather &amp; safety.</strong> Waggy Walks may postpone or cancel a walk if weather, dog welfare or safety makes it unsuitable, and will offer rescheduling or a refund for prepaid walks not provided.</p>
+<p><strong>No-shows.</strong> If nobody is available at the agreed meeting point, I’ll try to contact you; the walk may then be treated as missed. Any charge will be explained to you first.</p>
+<p><strong>Payment.</strong> Payment methods are agreed on confirmation. No online payments are available on this site.</p>
+<p class="mu">Draft terms – to be reviewed by a parent or guardian against South African consumer law before launch.</p></div></section>
+
+<section id="adminS" class="w hide"><h2>Admin</h2><div class="card adm"><h3>Bookings</h3><div id="ab"></div><h3 style="margin-top:20px">Review inbox</h3><div id="ar2"></div>
+<h3 style="margin-top:20px">Block a date</h3><div class="row"><input type="date" id="bd" style="max-width:200px"><button class="btn sm" id="bb">Block date</button></div><div id="bl" class="mu"></div></div></section>
+
+<section id="contact" class="w"><h2>Contact</h2><div class="grid c2"><div class="card"><p>📞 <a href="tel:+27742501723">074 250 1723</a></p><p>✉️ <a href="mailto:tumelondk@gmail.com">tumelondk@gmail.com</a></p>
+<p><a class="btn" href="https://wa.me/27742501723?text=Hi%20Waggy%20Walks!%20I'd%20like%20to%20enquire%20about%20booking%20a%20dog%20walk." target="_blank" rel="noopener">WhatsApp us</a></p>
+<p class="mu">Mon–Fri 15:30–18:30 · Sat–Sun 12:00–18:00</p></div>
+<div class="card"><h3>Service areas</h3><ul class="t" id="al"></ul><p class="mu">Outside these areas? Message me first and I’ll let you know if it’s possible.</p></div></div></section>
+</main>
+
+<footer><div class="w"><div class="logo"><svg width="38" height="38" aria-hidden="true"><use href="#lg"/></svg><span>Waggy <b>Walks</b></span></div><p>Caring, reliable local dog walking.</p>
+<p><a href="#pricing">Pricing</a> · <a href="#reviews">Reviews</a> · <a href="#policy">Booking &amp; refund policy</a> · <a href="#policy">Privacy</a></p>
+<p>Your details are used only to manage your booking. © Waggy Walks</p></div></footer>
+<div class="fab"><a class="btn g" style="background:#0c0814" href="https://wa.me/27742501723" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script>
+const $=s=>document.querySelector(s),T=(t,x)=>{const e=document.createElement(t);if(x!=null)e.textContent=x;return e};
+const PK={quick:{n:"30-Min Walk · 1 Dog",min:30,dogs:1,price:70,d:"A shorter walk and exercise session for one dog."},quick2:{n:"30-Min Walk · 2 Dogs",min:30,dogs:2,price:110,d:"A shorter walk for two dogs from the same household."},happy:{n:"1-Hour Walk · 1 Dog",min:60,dogs:1,price:100,d:"A full walk with time to explore and exercise."},double:{n:"1-Hour Walk · 2 Dogs",min:60,dogs:2,price:150,d:"Two dogs from the same household who can safely walk together."}};
+const AREAS=["Ruiterhof","Fontainebleau"];
+const FAQ=[["How do I book a walk?","Choose a service, date and available time in the booking form. I’ll confirm your request personally."],["What areas do you serve?","Ruiterhof and Fontainebleau. Ask first if you’re nearby."],["How much does a walk cost?","30 minutes: R70 for one dog, R110 for two. 60 minutes: R100 for one dog, R150 for two."],["Can you walk two dogs together?","Yes, subject to a meet-and-greet to check both dogs can be handled safely together."],["What happens if it rains?","Walks may be postponed if weather is unsafe. You’ll be offered a new time."],["What if my dog pulls on the leash?","Please mention it in the notes box so I can plan. I can’t promise every dog can be accepted."],["How will I know my dog is safe?","I’ll keep you updated and you’ll have a clear way to reach me."],["Can I cancel or reschedule?","Please give 24 hours’ notice where possible. See the policy above."],["How do I pay?","Payment method is agreed when I confirm. No online payment is available yet."],["Can I book recurring walks?","Book each walk here, or message me to discuss a regular schedule."],["What if no times are available?","Try another day, or message me on WhatsApp. I can’t guarantee every request."]];
+let db=null,uid=null,admin=false,chosen=null,busy=false;const reg=PK;
+$("#areasHero").textContent="Serving "+AREAS.join(", ")+".";
+AREAS.forEach(a=>{$("#al").append(T("li",a));$("#ar").append(new Option(a,a))});$("#ar").append(new Option("Somewhere else (I’ll check first)","other"));
+FAQ.forEach(([q,a])=>{const d=T("details"),s=T("summary",q);d.append(s,T("p",a));$("#fq").append(d)});
+Object.entries(PK).forEach(([k,p])=>{$("#svc").append(new Option(`${p.n} – R${p.price} (${p.min} min, ${p.dogs} dog${p.dogs>1?"s":""})`,k));
+const c=T("div");c.className="card"+(k==="double"?" feat":"");c.append(T("h3",p.n),T("div","R"+p.price));c.lastChild.className="price";c.append(T("p",`${p.min} minutes · ${p.dogs} dog${p.dogs>1?"s":""} · total R${p.price}`),T("p",p.d));c.lastChild.className="mu";
+const b=T("button","Choose this walk");b.className="btn";b.onclick=()=>{$("#svc").value=k;loadSlots();$("#book").scrollIntoView()};c.append(b);$("#pk").append(c)});
+$("#hs").innerHTML=$("#svc").innerHTML;$("#ha").innerHTML=$("#ar").innerHTML;$("#hg").onclick=()=>{$("#svc").value=$("#hs").value;$("#ar").value=$("#ha").value;loadSlots();$("#book").scrollIntoView()};
+$("#mb").onclick=()=>{const o=$("#menu").classList.toggle("o");$("#mb").setAttribute("aria-expanded",o)};$("#menu").onclick=()=>$("#menu").classList.remove("o");
+const hrs=d=>{const w=d.getDay();return(w===0||w===6)?[720,1080]:[930,1110]};
+const fmt=m=>String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const saNow=()=>new Date(new Date().toLocaleString("en-US",{timeZone:"Africa/Johannesburg"}));
+const now0=saNow();$("#dt").min=iso(now0);
+function msg(el,t,c){el.className="msg "+c;el.textContent=t}
+async function loadSlots(){const s=$("#sl");s.replaceChildren();chosen=null;const v=$("#dt").value;if(!v)return;
+const [y,m,d]=v.split("-").map(Number),dt=new Date(y,m-1,d),p=PK[$("#svc").value],[o,c]=hrs(dt),n=saNow();
+let taken=new Set(),blocked=false;if(db){try{(await db.collection("slots").where("date","==",v).get()).docs.forEach(x=>taken.add(x.data().t));blocked=(await db.doc("blocks/"+v).get()).exists}catch(e){}}
+$("#slh").textContent=db?(blocked?"This date isn’t available.":"Greyed-out times are unavailable."):"Booking storage isn’t connected, so times can’t be reserved right now.";
+for(let t=o;t+p.min<=c;t+=30){const b=T("button",fmt(t));b.type="button";b.className="slot";
+let bad=blocked||!db||iso(dt)<iso(n)||(iso(dt)===iso(n)&&t<=n.getHours()*60+n.getMinutes());
+for(let u=t;u<t+p.min;u+=30)if(taken.has(u))bad=true;b.disabled=bad;
+b.onclick=()=>{chosen=t;s.querySelectorAll(".slot").forEach(x=>x.classList.remove("on"));b.classList.add("on")};s.append(b)}}
+$("#dt").onchange=$("#svc").onchange=loadSlots;
+$("#bf").onsubmit=async e=>{e.preventDefault();const bm=$("#bm");if(busy)return;
+if(!db)return msg(bm,"Bookings can’t be saved right now because storage isn’t available. Please sign in and reload, or contact me on WhatsApp.","er");
+const f=id=>$(id).value.trim(),k=$("#svc").value,p=PK[k],v=$("#dt").value;
+if(!v||chosen==null||!f("#nm")||!f("#mp")||!/^\S+@\S+\.\S+$/.test(f("#em")))return msg(bm,"Please complete all required fields, choose a time, and check your email.","er");
+if(!$("#tm").checked)return msg(bm,"Please agree to the booking and cancellation policy.","er");
+const [y,m,d]=v.split("-").map(Number),[o,c]=hrs(new Date(y,m-1,d));if(chosen<o||chosen+p.min>c)return msg(bm,"That time is outside operating hours.","er");
+busy=true;$("#sub").disabled=true;msg(bm,"Checking availability…","in");const mine=[];
+try{if((await db.doc("blocks/"+v).get()).exists)throw"That date isn’t available.";
+const ref=Array.from(crypto.getRandomValues(new Uint8Array(5)),x=>"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"[x%32]).join("");
+for(let t=chosen;t<chosen+p.min;t+=30){const r=db.doc("slots/"+v+"_"+t),l=await r.acquire({holder:ref,ttlMs:5000});
+if(!l.acquired||(await r.get()).exists)throw"Sorry, that time was just taken. Please choose another.";await r.set({date:v,t,ref});mine.push(r)}
+if(!uid)throw"Please sign in to claude.ai to book, or contact me on WhatsApp.";const bd=db.doc("bookings/"+uid),old=(await bd.get()).data()||{};await bd.set({...old,[ref]:{ref,status:"pending",paid:false,service:k,price:p.price,mins:p.min,dogs:p.dogs,date:v,start:chosen,name:f("#nm"),email:f("#em"),area:$("#ar").value,meet:f("#mp"),notes:f("#nt"),created:new Date().toISOString()}});
+msg(bm,`Request received. Reference ${ref}: ${p.n}, ${v} at ${fmt(chosen)}, R${p.price}. Status: PENDING until I confirm. I haven’t emailed you, so please save this reference. See the cancellation policy above.`,"ok");$("#bf").reset();loadSlots()}
+catch(err){for(const r of mine)try{await r.delete()}catch(_){}msg(bm,typeof err==="string"?err:"Something went wrong and nothing was booked. Please try again.","er");loadSlots()}
+busy=false;$("#sub").disabled=false};
+$("#rf").onsubmit=async e=>{e.preventDefault();const rm=$("#rm"),n=$("#rn").value.trim(),t=$("#rt").value.trim();
+if(!db)return msg(rm,"Reviews can’t be saved right now.","er");if(!n||t.length<10)return msg(rm,"Please add your name and a short review.","er");
+if(Date.now()-(+sessionStorage.getItem("rl")||0)<60000)return msg(rm,"Please wait a minute before submitting again.","er");
+try{const rid=Date.now().toString(36);if(!uid)return msg(rm,"Please sign in to claude.ai to leave a review.","er");const ri=db.doc("review_inbox/"+uid),ro=(await ri.get()).data()||{};await ri.set({...ro,[rid]:{name:n.slice(0,60),dog:$("#rd").value.trim().slice(0,60),stars:+$("#rs").value,text:t.slice(0,600),date:new Date().toISOString()}});try{sessionStorage.setItem("rl",Date.now())}catch(_){}msg(rm,"Thank you! Your review will appear once approved.","ok");$("#rf").reset()}catch(_){msg(rm,"Couldn’t save your review.","er")}};
+function drawReviews(docs){const g=$("#rv");g.replaceChildren();if(!docs.length){$("#avg").textContent="Be one of the first to share your Waggy Walks experience.";return}
+const a=docs.reduce((s,d)=>s+d.stars,0)/docs.length;$("#avg").textContent=`${a.toFixed(1)} / 5 from ${docs.length} approved review${docs.length>1?"s":""}`;
+docs.forEach(d=>{const c=T("div");c.className="card";const s=T("div","★".repeat(d.stars)+"☆".repeat(5-d.stars));s.className="stars";c.append(s,T("p",d.text),T("p",d.name+(d.dog?` & ${d.dog}`:"")+" · "+d.date.slice(0,10)));c.lastChild.className="mu";g.append(c)})}
+function adminBtn(l,fn){const b=T("button",l);b.className="btn sm g";b.style.margin="2px";b.onclick=fn;return b}
+async function freeSlots(b){for(let t=b.start;t<b.start+b.mins;t+=30)try{await db.doc("slots/"+b.date+"_"+t).delete()}catch(_){}}
+function drawAdmin(bs){const w=$("#ab");w.replaceChildren();if(!bs.length)return w.append(T("p","No bookings yet."));bs.sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
+const tb=T("table");bs.forEach(b=>{const r=T("tr"),c=T("td");c.textContent=`${b.ref} · ${b.status}${b.paid?" · PAID":""}\n${b.date} ${fmt(b.start)} (${b.mins}m) R${b.price}\n${b.name} ${b.email}\n${b.area}, ${b.meet}\nNotes: ${b.notes||"-"}\nAdmin: ${b.admin||""}`;c.style.whiteSpace="pre-wrap";
+const set=async x=>{const r=db.doc("bookings/"+b._u),o=(await r.get()).data()||{};o[b.ref]={...o[b.ref],...x};await r.set(o)};
+c.append(document.createElement("br"),adminBtn("Confirm",()=>set({status:"confirmed"})),adminBtn("Complete",()=>set({status:"completed"})),adminBtn(b.paid?"Mark unpaid":"Mark paid",()=>set({paid:!b.paid})),adminBtn("Cancel",async()=>{const why=prompt("Reason for cancelling?");if(why==null)return;await freeSlots(b);set({status:"cancelled",reason:why})}),adminBtn("Note",()=>{const n=prompt("Private note",b.admin||"");if(n!=null)set({admin:n})}));r.append(c);tb.append(r)});w.append(tb)}
+async function rm0(x){const r=db.doc("review_inbox/"+x.u),o=(await r.get()).data()||{};delete o[x.id];await r.set(o)}
+function drawInbox(rs){const w=$("#ar2");w.replaceChildren();if(!rs.length)return w.append(T("p","No pending reviews."));rs.forEach(x=>{const d=x.v,c=T("div");c.style.margin="8px 0";c.append(T("p",`${"★".repeat(d.stars)} ${d.name}: ${d.text}`),adminBtn("Approve",async()=>{await db.doc("reviews/"+x.id).set(d);await rm0(x)}),adminBtn("Reject",()=>rm0(x)));w.append(c)})}
+(async()=>{try{db=await claude.use("db")}catch(_){}const u=await (async()=>{try{return await claude.use("user")}catch(_){return null}})();
+if(!db){msg($("#bkNote"),"Booking storage isn’t connected in this view, so requests can’t be saved. Contact me by WhatsApp or phone instead.","er");return}
+try{admin=u?await u.canEdit():false;uid=u?await u.id():null}catch(_){}
+db.collection("reviews").onSnapshot(s=>drawReviews(s.docs.map(d=>d.data())),()=>{});
+db.collection("blocks").onSnapshot(s=>{if(admin)$("#bl").textContent="Blocked: "+s.docs.map(d=>d.id).join(", ")},()=>{});loadSlots();
+if(admin){$("#adminS").classList.remove("hide");db.collection("bookings").onSnapshot(s=>drawAdmin(s.docs.flatMap(d=>Object.values(d.data()).map(b=>({...b,_u:d.id})))),()=>{});db.collection("review_inbox").onSnapshot(s=>drawInbox(s.docs.flatMap(d=>Object.entries(d.data()).map(([k,v])=>({u:d.id,id:k,v})))),()=>{});
+$("#bb").onclick=()=>{const v=$("#bd").value;if(v)db.doc("blocks/"+v).set({date:v})}}})();
+</script></body></html>
